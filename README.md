@@ -5,8 +5,8 @@ Traditional asset pricing models assume that expected returns are fully explaine
 
 This project integrates:
 
-Fama-French 5-Factor Modeling
-High-Dimensional Alpha Testing
+Fama-French 5-Factor Modeling ,
+High-Dimensional Alpha Testing ,
 Dynamic Alpha Estimation
 Physics-Informed Neural Networks (PINNs)
 Inverse PDE Discovery
@@ -17,15 +17,16 @@ Institutional-Style Backtesting
 into a unified quantitative research workflow.
 
 Key Results
-Metric	Result
-Equities Analyzed	10 U.S. Large-Cap Stocks
-Data Horizon	5 Years
-Factor Model	Fama-French 5-Factor
-Annualized Return	24.3%
-Win Rate	56.7%
-Sharpe Ratio	0.64
-Sortino Ratio	0.94
-Maximum Drawdown	-39.4%
-Market Regimes Identified	4
+# QuantAlpha AI
+
+## Key Results
+
+| Metric | Value |
+|----------|----------|
+| Annualized Return | 24.3% |
+| Win Rate | 56.7% |
+| Sharpe Ratio | 0.64 |
+Equities Analyzed
+
 
 

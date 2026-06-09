@@ -28,5 +28,9 @@ Key Results
 | Sharpe Ratio | 0.64 |
 Equities Analyzed
 
+<img width="1248" height="848" alt="Gemini_Generated_Image_ejht4zejht4zejht" src="https://github.com/user-attachments/assets/78781bed-ed95-4aee-944f-9b97679b0664" />
+
+
+
 
 

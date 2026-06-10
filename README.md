@@ -269,6 +269,21 @@ The strong recovery observed after early drawdowns suggests that dynamic alpha e
 
 These results demonstrate the economic significance of the alpha forecasting framework and provide evidence that factor-adjusted abnormal returns can be transformed into systematic trading signals.
 
+Risk Analysis
+
+<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/8e8c28a5-a158-474b-8a89-a2814b52f5d9" />
+
+The drawdown curve measures peak-to-trough declines in portfolio value and provides insight into the risk characteristics of the strategy.
+
+The maximum drawdown observed during the evaluation period was approximately -39.4%, occurring during the early stages of the backtest. This period coincided with weaker alpha opportunities and adverse market conditions.
+
+Following the drawdown phase, the strategy demonstrated strong recovery characteristics, eventually achieving new equity highs and fully recovering prior losses.
+
+The drawdown profile highlights both the risks and resilience of the alpha-driven investment framework. While periods of significant capital decline occurred, the strategy maintained the ability to recover and generate positive long-term performance.
+
+
+
+
 
 
 

@@ -120,7 +120,32 @@ into a unified quantitative research workflow.
                     │ Research Insights   │
                     │ & Trading Signals   │
                     └─────────────────────┘
-```
+
+  ## Workflow Summary
+
+1. Collect 5 years of equity and factor data.
+2. Estimate factor-adjusted alpha using the Fama-French 5-Factor model.
+3. Test for statistically significant market inefficiencies.
+4. Model dynamic alpha evolution through rolling regressions.
+5. Forecast alpha dynamics using Physics-Informed Neural Networks.
+6. Learn latent market dynamics through inverse PDE discovery.
+7. Detect market regimes using machine learning clustering.
+8. Construct long-short portfolios from alpha forecasts.
+9. Evaluate economic significance through institutional-style backtesting. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
 

@@ -229,6 +229,36 @@ The result is a framework capable of detecting, forecasting, and economically va
 
 This sequence represents the complete alpha discovery, forecasting, and economic validation workflow implemented in QuantAlpha AI.
 
+## Benchmark Evaluation
+
+Strategy performance was evaluated relative to:
+
+* Market Average Portfolio Return
+* Risk-Free Rate Baseline
+* Equal-Weighted Equity Portfolio
+* Static Factor-Based Alpha Strategy
+
+## Research & Performance Highlights
+
+| Category | Result |
+|-----------|-----------|
+| Dataset | 10 U.S. Large-Cap Equities |
+| Historical Horizon | 5 Years |
+| Asset Pricing Model | Fama-French 5-Factor |
+| Alpha Framework | High-Dimensional Alpha Detection |
+| Dynamic Modeling | Rolling Alpha Estimation |
+| Scientific ML | Physics-Informed Neural Networks (PINNs) |
+| Market State Modeling | Regime Detection |
+| Strategy Type | Long-Short Alpha Portfolio |
+| Annualized Return | 24.3% |
+| Win Rate | 56.7% |
+| Sharpe Ratio | 0.64 |
+| Sortino Ratio | 0.94 |
+| Maximum Drawdown | -39.4% |
+| Research Areas | Quant Finance, Econometrics, Scientific ML |
+
+
+
 
 
 

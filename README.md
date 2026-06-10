@@ -203,6 +203,17 @@ The result is a framework capable of detecting, forecasting, and economically va
 8. Construct long-short portfolios from alpha forecasts.
 9. Evaluate economic significance through institutional-style backtesting.
 
+Key Files
+Source Code
+File	Description
+src/factor_models.py	Fama-French 5-Factor alpha and beta estimation engine
+src/alpha_testing.py	High-dimensional alpha testing and residual dependence analysis
+src/dynamic_alpha.py	Rolling alpha estimation and market inefficiency modeling
+src/pinn.py	Physics-Informed Neural Network implementation for alpha dynamics
+src/inverse_pde.py	Inverse PDE discovery framework for learning drift and diffusion parameters
+src/regime_detection.py	Machine-learning-based market regime classification
+src/portfolio.py	Alpha ranking and long-short portfolio construction
+src/backtesting.py	Portfolio evaluation and performance analytics
    
 
 

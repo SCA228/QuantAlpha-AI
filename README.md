@@ -238,7 +238,7 @@ Strategy performance was evaluated relative to:
 * Equal-Weighted Equity Portfolio
 * Static Factor-Based Alpha Strategy
 
-## Research & Performance Highlights
+## Key Results Highlights 
 
 | Category | Result |
 |-----------|-----------|

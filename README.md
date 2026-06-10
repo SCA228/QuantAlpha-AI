@@ -257,6 +257,8 @@ Strategy performance was evaluated relative to:
 | Maximum Drawdown | -39.4% |
 | Research Areas | Quant Finance, Econometrics, Scientific ML |
 
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/9cfa39df-b8c5-4d06-9f5c-f79a97da329c" />
+
 
 
 

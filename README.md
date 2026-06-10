@@ -203,18 +203,32 @@ The result is a framework capable of detecting, forecasting, and economically va
 8. Construct long-short portfolios from alpha forecasts.
 9. Evaluate economic significance through institutional-style backtesting.
 
-Key Files
-Source Code
-File	Description
-src/factor_models.py	Fama-French 5-Factor alpha and beta estimation engine
-src/alpha_testing.py	High-dimensional alpha testing and residual dependence analysis
-src/dynamic_alpha.py	Rolling alpha estimation and market inefficiency modeling
-src/pinn.py	Physics-Informed Neural Network implementation for alpha dynamics
-src/inverse_pde.py	Inverse PDE discovery framework for learning drift and diffusion parameters
-src/regime_detection.py	Machine-learning-based market regime classification
-src/portfolio.py	Alpha ranking and long-short portfolio construction
-src/backtesting.py	Portfolio evaluation and performance analytics
-   
+## Source Code – Key Files
+
+| File                      | Purpose                                                                                                                                                 |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/factor_models.py`    | Implements CAPM and Fama-French 5-Factor regressions to estimate alpha, beta exposures, residual returns, t-statistics, and significance metrics.       |
+| `src/alpha_testing.py`    | Performs high-dimensional alpha testing, residual dependence analysis, correlation structure estimation, and market-wide alpha significance evaluation. |
+| `src/dynamic_alpha.py`    | Computes rolling alpha and beta estimates, constructs the Market Inefficiency Index, and tracks the evolution of abnormal returns through time.         |
+| `src/pinn.py`             | Implements Physics-Informed Neural Networks (PINNs) for modeling and forecasting alpha dynamics under PDE-based financial constraints.                  |
+| `src/inverse_pde.py`      | Learns latent market dynamics by estimating drift and diffusion parameters governing alpha evolution through inverse PDE discovery.                     |
+| `src/regime_detection.py` | Applies machine learning clustering techniques to classify market states into Efficient, Crisis, Alpha Opportunity, and Normalization regimes.          |
+| `src/portfolio.py`        | Generates alpha rankings, constructs long-short portfolios, and computes portfolio allocations from forecast alpha signals.                             |
+| `src/backtesting.py`      | Evaluates economic significance using annualized return, Sharpe ratio, Sortino ratio, maximum drawdown, win rate, and performance attribution metrics.  |
+
+### Research Pipeline
+
+`factor_models.py`
+→ `alpha_testing.py`
+→ `dynamic_alpha.py`
+→ `pinn.py`
+→ `inverse_pde.py`
+→ `regime_detection.py`
+→ `portfolio.py`
+→ `backtesting.py`
+
+This sequence represents the complete alpha discovery, forecasting, and economic validation workflow implemented in QuantAlpha AI.
+
 
 
 

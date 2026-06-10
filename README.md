@@ -16,9 +16,6 @@ Institutional-Style Backtesting
 
 into a unified quantitative research workflow.
 
-Key Results
-# QuantAlpha AI
-
 ## Key Results
 
 | Metric | Result |
@@ -38,6 +35,92 @@ Key Results
 | Alpha Forecasting | Enabled |
 | Regime Detection | Machine Learning Based |
 | PDE Discovery | Drift & Diffusion Parameters Learned |
+
+# System Architecture
+
+
+                    ┌─────────────────────┐
+                    │   Market Data       │
+                    │  (Equity Returns)   │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Fama-French Factors │
+                    │  MKT, SMB, HML      │
+                    │  RMW, CMA           │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Factor-Based Alpha  │
+                    │     Estimation      │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ High-Dimensional    │
+                    │  Alpha Testing      │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Dynamic Alpha       │
+                    │     Modeling        │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Market Inefficiency │
+                    │       Index         │
+                    └──────────┬──────────┘
+                               │
+                 ┌─────────────┴─────────────┐
+                 ▼                           ▼
+
+      ┌─────────────────────┐    ┌─────────────────────┐
+      │ Physics-Informed    │    │ Market Regime       │
+      │ Neural Networks     │    │ Detection           │
+      │ (PINN)              │    │ (Machine Learning)  │
+      └──────────┬──────────┘    └──────────┬──────────┘
+                 │                          │
+                 ▼                          ▼
+
+      ┌─────────────────────┐    ┌─────────────────────┐
+      │ Inverse PDE         │    │ Regime Labels       │
+      │ Discovery           │    │ Efficient/Crisis    │
+      │ μ, D Parameters     │    │ Alpha Opportunity   │
+      └──────────┬──────────┘    └──────────┬──────────┘
+                 └────────────┬─────────────┘
+                              │
+                              ▼
+
+                    ┌─────────────────────┐
+                    │ Alpha Forecasting   │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+
+                    ┌─────────────────────┐
+                    │ Portfolio           │
+                    │ Construction        │
+                    │ Long / Short        │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+
+                    ┌─────────────────────┐
+                    │ Backtesting &       │
+                    │ Performance Metrics │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+
+                    ┌─────────────────────┐
+                    │ Research Insights   │
+                    │ & Trading Signals   │
+                    └─────────────────────┘
+```
 
 
 

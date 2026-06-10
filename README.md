@@ -16,6 +16,97 @@ Institutional-Style Backtesting
 
 into a unified quantitative research workflow.
 
+# Core Innovation
+
+Most quantitative finance projects stop at estimating alpha using traditional factor models.
+
+QuantAlpha AI extends this process significantly further by treating alpha as a dynamic and evolving market state rather than a static parameter.
+
+The framework introduces a multi-stage research pipeline that combines econometrics, high-dimensional statistical inference, scientific machine learning, and portfolio analytics to discover, model, and monetize market inefficiencies.
+
+## Key Innovations
+
+### Dynamic Alpha Instead of Static Alpha
+
+Traditional asset-pricing studies estimate a single alpha value over an entire sample period.
+
+QuantAlpha AI estimates:
+
+α(t) through rolling-window regressions, enabling the analysis of how abnormal returns evolve over time and across market conditions.
+
+### Market Inefficiency as a Measurable State Variable
+
+The framework introduces a Market Inefficiency Index constructed from dynamic alpha estimates.
+
+This allows market efficiency to be monitored continuously rather than treated as a binary assumption.
+
+The resulting signal provides a quantitative measure of evolving alpha opportunities.
+
+---
+
+### Physics-Informed Alpha Forecasting
+
+Instead of relying solely on conventional machine learning models, QuantAlpha AI applies Physics-Informed Neural Networks (PINNs) to model alpha dynamics.
+
+The model incorporates both:
+
+* Historical financial data
+* Governing dynamic constraints
+
+This enables alpha forecasting while maintaining consistency with underlying market evolution processes.
+
+---
+
+### Inverse PDE Discovery for Financial Markets
+
+Rather than assuming market dynamics are known, the framework learns them directly from observed alpha behavior.
+
+An inverse PINN estimates latent drift and diffusion parameters governing alpha evolution, providing interpretable insights into the mechanisms driving market inefficiency.
+
+This transforms the project from a predictive model into a scientific discovery framework.
+
+---
+
+### Regime-Aware Alpha Research
+
+The platform identifies market regimes using machine learning clustering techniques.
+
+Detected states include:
+
+* Efficient Markets
+* Crisis Regimes
+* Alpha Opportunity Regimes
+* Normalization Regimes
+
+This allows alpha signals to be interpreted within the context of changing market environments.
+
+
+### End-to-End Economic Validation
+
+Most academic alpha studies stop at statistical significance.
+
+QuantAlpha AI evaluates economic significance by transforming forecast alpha into systematic long-short portfolios and assessing performance through institutional portfolio analytics.
+
+This closes the gap between quantitative research and practical investment implementation.
+
+---
+
+## Research Contribution
+
+QuantAlpha AI combines:
+
+* Factor Investing
+* High-Dimensional Statistics
+* Scientific Machine Learning
+* Inverse PDE Discovery
+* Market Regime Detection
+* Systematic Portfolio Construction
+
+into a unified quantitative research platform.
+
+The result is a framework capable of detecting, forecasting, and economically validating market inefficiencies through an integrated research pipeline.
+
+
 ## Key Results
 
 | Metric | Result |
@@ -133,430 +224,7 @@ into a unified quantitative research workflow.
 8. Construct long-short portfolios from alpha forecasts.
 9. Evaluate economic significance through institutional-style backtesting.
 
-    # Methodology
-
-The QuantAlpha AI framework combines econometric asset pricing models, high-dimensional statistical inference, scientific machine learning, and portfolio analytics into a unified quantitative research pipeline.
-
----
-
-## 1. Factor-Based Alpha Estimation
-
-The first stage estimates abnormal returns (alpha) using the Fama-French 5-Factor asset pricing model.
-
-### Model Specification
-
-[
-R_i - R_f =
-\alpha_i
-+
-\beta_M MKT
-+
-\beta_S SMB
-+
-\beta_H HML
-+
-\beta_R RMW
-+
-\beta_C CMA
-+
-\epsilon_i
-]
-
-Where:
-
-* (R_i): Asset return
-* (R_f): Risk-free rate
-* (MKT): Market excess return
-* (SMB): Size factor
-* (HML): Value factor
-* (RMW): Profitability factor
-* (CMA): Investment factor
-* (\alpha_i): Abnormal return
-* (\beta): Factor sensitivities
-
-### Objective
-
-Estimate abnormal returns unexplained by systematic risk exposures.
-
-### Outputs
-
-* Alpha Matrix
-* Beta Matrix
-* Residual Return Matrix
-* Statistical Significance Metrics
-
----
-
-## 2. High-Dimensional Alpha Detection
-
-Traditional alpha estimation evaluates securities independently.
-
-This framework evaluates alpha collectively across the market.
-
-### Residual Correlation Matrix
-
-[
-\Sigma_\epsilon
-===============
-
-Cov(\epsilon)
-]
-
-where:
-
-[
-\epsilon=
-[\epsilon_1,\epsilon_2,\ldots,\epsilon_N]
-]
-
-### Global Alpha Significance
-
-The framework evaluates whether abnormal returns persist beyond factor explanations by analyzing the dependence structure of residual returns.
-
-### Objective
-
-Determine whether statistically significant market inefficiencies exist after controlling for known risk factors.
-
-### Outputs
-
-* Residual Correlation Structure
-* J-Alpha Statistics
-* Market-Wide Alpha Significance Measures
-
----
-
-## 3. Dynamic Alpha Modeling
-
-Static alpha estimation assumes:
-
-[
-\alpha_i(t)=constant
-]
-
-This assumption is unrealistic in evolving financial markets.
-
-### Rolling Alpha Estimation
-
-Using rolling-window regressions:
-
-[
-\alpha_i(t)
-]
-
-is estimated through time.
-
-### Market Inefficiency Index
-
-The aggregate level of market inefficiency is measured as:
-
-[
-MI_t
-====
-
-\frac{1}{N}
-\sum_{i=1}^{N}
-|\alpha_i(t)|
-]
-
-### Interpretation
-
-Large values indicate periods of elevated market inefficiency and increased alpha opportunities.
-
-### Outputs
-
-* Rolling Alpha Matrix
-* Rolling Beta Matrix
-* Market Inefficiency Time Series
-
----
-
-## 4. Physics-Informed Neural Networks (PINNs)
-
-Alpha is modeled as a dynamic state variable:
-
-[
-\alpha = \alpha(t,x)
-]
-
-where:
-
-* (t): Time
-* (x): Asset dimension
-
-### Governing Equation
-
-The alpha evolution process is represented using an advection-diffusion PDE:
-
-[
-\frac{\partial \alpha}{\partial t}
-+
-\mu
-\frac{\partial \alpha}{\partial x}
-----------------------------------
-
-D
-\frac{\partial^2 \alpha}{\partial x^2}
-======================================
-
-0
-]
-
-where:
-
-* (\mu): Alpha drift
-* (D): Alpha diffusion
-
-### PINN Objective Function
-
-[
-L
-=
-
-L_{data}
-+
-\lambda L_{PDE}
-]
-
-The model simultaneously minimizes:
-
-* Data fitting error
-* PDE residual error
-
-### Outputs
-
-* Alpha Forecasts
-* Alpha Surface Predictions
-* Trained PINN Models
-
----
-
-## 5. Inverse PDE Discovery
-
-Instead of assuming market dynamics are known, the framework learns them directly from data.
-
-### Unknown Parameters
-
-[
-\mu
-]
-
-Alpha Drift
-
-[
-D
-]
-
-Alpha Diffusion
-
-### Optimization Objective
-
-[
-\min_{\mu,D}
-L_{PDE}
-]
-
-The inverse PINN estimates latent parameters governing alpha evolution.
-
-### Outputs
-
-* Learned Drift Parameters
-* Learned Diffusion Parameters
-* Inferred Market Dynamics
-
----
-
-## 6. Market Regime Detection
-
-Financial markets exhibit regime-dependent behavior.
-
-### Feature Space
-
-Regime classification uses:
-
-* Market Inefficiency Index
-* Rolling Alpha
-* Rolling Volatility
-
-### Clustering Framework
-
-K-Means clustering partitions observations into:
-
-[
-K=4
-]
-
-market states.
-
-### Regimes
-
-1. Efficient Regime
-2. Crisis Regime
-3. Alpha Opportunity Regime
-4. Normalization Regime
-
-### Outputs
-
-* Regime Labels
-* Regime Transition Matrix
-
----
-
-## 7. Systematic Portfolio Construction
-
-Alpha forecasts are transformed into investment decisions.
-
-### Ranking Function
-
-Assets are ranked using:
-
-[
-Rank_i
-======
-
-\alpha_i
-]
-
-### Portfolio Formation
-
-Long Portfolio:
-
-[
-Top(\alpha)
-]
-
-Short Portfolio:
-
-[
-Bottom(\alpha)
-]
-
-### Portfolio Return
-
-[
-R_{LS}
-======
-
-\frac{1}{N_L}
-\sum R_L
---------
-
-\frac{1}{N_S}
-\sum R_S
-]
-
-where:
-
-* (N_L): Number of long positions
-* (N_S): Number of short positions
-
-### Outputs
-
-* Portfolio Weights
-* Alpha Rankings
-* Long-Short Portfolios
-
----
-
-## 8. Economic Validation and Performance Evaluation
-
-The economic value of alpha is evaluated through institutional portfolio analytics.
-
-### Equity Curve
-
-[
-W_t
-===
-
-W_{t-1}
-(1+R_t)
-]
-
-### Annualized Return
-
-[
-AR
-==
-
-12
-\times
-\bar R
-]
-
-### Annualized Volatility
-
-[
-\sigma_A
-========
-
-\sqrt{12}
-\times
-Std(R_t)
-]
-
-### Sharpe Ratio
-
-[
-Sharpe
-======
-
-\frac{
-AR-R_f
-}
-{
-\sigma_A
-}
-]
-
-### Sortino Ratio
-
-[
-Sortino
-=======
-
-\frac{
-AR-R_f
-}
-{
-\sigma_{downside}
-}
-]
-
-### Maximum Drawdown
-
-[
-MDD
-===
-
-\frac{
-Peak-Trough
-}
-{
-Peak
-}
-]
-
-### Objective
-
-Determine whether detected alpha translates into economically meaningful and risk-adjusted investment performance.
-
-### Outputs
-
-* Equity Curve
-* Drawdown Analysis
-* Risk Metrics
-* Performance Attribution
-* Strategy Validation
-
-
-
-
-
-
-
-
-
-
-
+   
 
 
 

@@ -106,27 +106,6 @@ into a unified quantitative research platform.
 
 The result is a framework capable of detecting, forecasting, and economically validating market inefficiencies through an integrated research pipeline.
 
-
-## Key Results
-
-| Metric | Result |
-|----------|----------|
-| Equities Analyzed | 10 U.S. Large-Cap Stocks |
-| Data Horizon | 5 Years |
-| Factor Model | Fama-French 5-Factor |
-| Dynamic Alpha Estimation | Rolling 60-Month Regressions |
-| Market Regimes Detected | 4 |
-| PINN Framework | Physics-Informed Neural Network |
-| Annualized Return | 24.3% |
-| Win Rate | 56.7% |
-| Sharpe Ratio | 0.64 |
-| Sortino Ratio | 0.94 |
-| Maximum Drawdown | -39.4% |
-| Portfolio Type | Long-Short Alpha Strategy |
-| Alpha Forecasting | Enabled |
-| Regime Detection | Machine Learning Based |
-| PDE Discovery | Drift & Diffusion Parameters Learned |
-
 # System Architecture
 
 

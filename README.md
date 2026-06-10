@@ -21,14 +21,25 @@ Key Results
 
 ## Key Results
 
-| Metric | Value |
+| Metric | Result |
 |----------|----------|
+| Equities Analyzed | 10 U.S. Large-Cap Stocks |
+| Data Horizon | 5 Years |
+| Factor Model | Fama-French 5-Factor |
+| Dynamic Alpha Estimation | Rolling 60-Month Regressions |
+| Market Regimes Detected | 4 |
+| PINN Framework | Physics-Informed Neural Network |
 | Annualized Return | 24.3% |
 | Win Rate | 56.7% |
 | Sharpe Ratio | 0.64 |
-Equities Analyzed
+| Sortino Ratio | 0.94 |
+| Maximum Drawdown | -39.4% |
+| Portfolio Type | Long-Short Alpha Strategy |
+| Alpha Forecasting | Enabled |
+| Regime Detection | Machine Learning Based |
+| PDE Discovery | Drift & Diffusion Parameters Learned |
 
-<img width="900" height="500" alt="Gemini_Generated_Image_ejht4zejht4zejht" src="https://github.com/user-attachments/assets/78781bed-ed95-4aee-944f-9b97679b0664" />
+
 
 
 

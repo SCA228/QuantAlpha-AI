@@ -279,7 +279,19 @@ The maximum drawdown observed during the evaluation period was approximately -39
 
 Following the drawdown phase, the strategy demonstrated strong recovery characteristics, eventually achieving new equity highs and fully recovering prior losses.
 
-The drawdown profile highlights both the risks and resilience of the alpha-driven investment framework. While periods of significant capital decline occurred, the strategy maintained the ability to recover and generate positive long-term performance.
+The drawdown profile highlights both the risks and resilience of the alpha-driven investment framework. While periods of significant capital decline occurred, the strategy maintained the ability to recover and generate positive long-term performance. 
+
+# Market Inefficiency Dynamics
+
+![Market Inefficiency](figures/market_inefficiency_plot.png)
+
+### Interpretation
+
+The Market Inefficiency Index measures the average magnitude of factor-adjusted alpha across the equity universe.
+
+Periods of elevated index values indicate stronger deviations from traditional asset-pricing models and therefore larger potential alpha opportunities. Conversely, lower values suggest markets are behaving more efficiently and abnormal returns are less pronounced.
+
+The results indicate a significant increase in market inefficiency during late 2023 and early 2024, followed by a normalization phase toward the end of the sample period. This suggests that alpha opportunities are highly regime-dependent and evolve through time rather than remaining constant.
 
 
 

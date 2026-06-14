@@ -306,6 +306,27 @@ Conversely, Efficient regimes are characterized by compressed alpha dispersion a
 
 The existence of persistent regime structure provides empirical support for incorporating state-dependent signals into alpha forecasting and portfolio allocation frameworks, as the profitability of alpha-based strategies appears to vary meaningfully across market environments.
 
+## Dynamic Alpha Heatmap 
+
+<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/34e3c368-1b2f-40d4-9002-b6cd38b5f54f" />
+
+The heatmap presents rolling Fama-French 5-Factor alpha estimates for the analyzed U.S. large-cap equity universe from 2022–2025. By tracking factor-adjusted abnormal returns through time, the visualization highlights the non-stationary nature of alpha generation and reveals significant cross-sectional heterogeneity across securities.
+
+Several equities exhibit persistent positive alpha clusters over extended periods, suggesting return-generating behavior not fully explained by traditional systematic risk factors. In particular, NVDA and META demonstrate sustained alpha persistence during late 2023 and early 2024, coinciding with elevated market inefficiency levels identified elsewhere in the framework.
+
+The observed concentration of positive alpha within specific time intervals indicates that alpha opportunities emerge episodically rather than continuously. These findings provide empirical support for treating alpha as a dynamic state variable and motivate the use of regime-aware forecasting techniques, Physics-Informed Neural Networks (PINNs), and adaptive portfolio construction methodologies.
+
+Key Insight: Alpha generation exhibits clear temporal clustering and regime dependence, suggesting that dynamic forecasting frameworks may offer a meaningful advantage over static factor-based investment approaches.
+
+
+
+
+
+
+
+
+
+
 
 
 

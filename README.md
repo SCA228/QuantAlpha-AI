@@ -1,4 +1,4 @@
-<img width="1387" height="590" alt="image" src="https://github.com/user-attachments/assets/7f396acf-c361-40f6-aadf-d16384112eca" /># QuantAlpha-AI
+
 QuantAlpha AI is an end-to-end quantitative research platform designed to identify, model, and forecast market inefficiencies through a combination of econometrics, factor investing, machine learning, and scientific computing.
 
 Traditional asset pricing models assume that expected returns are fully explained by systematic risk factors. However, persistent abnormal returns (alpha) frequently emerge due to information asymmetry, behavioral biases, and evolving market conditions. This project investigates whether such alpha can be statistically detected, dynamically modeled, and transformed into systematic investment strategies.

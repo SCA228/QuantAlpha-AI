@@ -257,7 +257,7 @@ Strategy performance was evaluated relative to:
 | Maximum Drawdown | -39.4% |
 | Research Areas | Quant Finance, Econometrics, Scientific ML |
 
-Strategy Performance Backtesting Results 
+# Strategy Performance Backtesting Results 
 
 <img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/99b22672-7bf0-404c-ad80-4d130607c8c0" />
 
@@ -269,7 +269,8 @@ The strong recovery observed after early drawdowns suggests that dynamic alpha e
 
 These results demonstrate the economic significance of the alpha forecasting framework and provide evidence that factor-adjusted abnormal returns can be transformed into systematic trading signals.
 
-Risk Analysis
+
+# Risk Analysis
 
 <img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/8e8c28a5-a158-474b-8a89-a2814b52f5d9" />
 
@@ -285,15 +286,13 @@ The drawdown profile highlights both the risks and resilience of the alpha-drive
 
 <img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/626e8cd0-2121-4810-95fa-c24898d3f818" />
 
-### Interpretation
-
 The Market Inefficiency Index captures the aggregate magnitude of factor-adjusted alpha across the analyzed equity universe.
 
 Elevated inefficiency levels during 2023–2024 indicate periods in which traditional factor models exhibited reduced explanatory power, creating a richer environment for alpha generation. Subsequent declines suggest a normalization process consistent with adaptive market behavior and the gradual dissipation of exploitable inefficiencies.
 
 The observed dynamics support the hypothesis that market efficiency is regime-dependent and evolves through time.
 
-Market Regime Detection 
+# Market Regime Detection 
 
 <img width="750" height="550" alt="image" src="https://github.com/user-attachments/assets/022309de-98c9-451a-a096-31745a4b95ff" />
 

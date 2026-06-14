@@ -1,4 +1,4 @@
-# QuantAlpha-AI
+<img width="1387" height="590" alt="image" src="https://github.com/user-attachments/assets/7f396acf-c361-40f6-aadf-d16384112eca" /># QuantAlpha-AI
 QuantAlpha AI is an end-to-end quantitative research platform designed to identify, model, and forecast market inefficiencies through a combination of econometrics, factor investing, machine learning, and scientific computing.
 
 Traditional asset pricing models assume that expected returns are fully explained by systematic risk factors. However, persistent abnormal returns (alpha) frequently emerge due to information asymmetry, behavioral biases, and evolving market conditions. This project investigates whether such alpha can be statistically detected, dynamically modeled, and transformed into systematic investment strategies.
@@ -283,15 +283,34 @@ The drawdown profile highlights both the risks and resilience of the alpha-drive
 
 # Market Inefficiency Dynamics
 
-![Market Inefficiency](figures/market_inefficiency_plot.png)
+<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/626e8cd0-2121-4810-95fa-c24898d3f818" />
 
 ### Interpretation
 
-The Market Inefficiency Index measures the average magnitude of factor-adjusted alpha across the equity universe.
+The Market Inefficiency Index captures the aggregate magnitude of factor-adjusted alpha across the analyzed equity universe.
 
-Periods of elevated index values indicate stronger deviations from traditional asset-pricing models and therefore larger potential alpha opportunities. Conversely, lower values suggest markets are behaving more efficiently and abnormal returns are less pronounced.
+Elevated inefficiency levels during 2023–2024 indicate periods in which traditional factor models exhibited reduced explanatory power, creating a richer environment for alpha generation. Subsequent declines suggest a normalization process consistent with adaptive market behavior and the gradual dissipation of exploitable inefficiencies.
 
-The results indicate a significant increase in market inefficiency during late 2023 and early 2024, followed by a normalization phase toward the end of the sample period. This suggests that alpha opportunities are highly regime-dependent and evolve through time rather than remaining constant.
+The observed dynamics support the hypothesis that market efficiency is regime-dependent and evolves through time.
+
+Market Regime Detection 
+
+<img width="750" height="550" alt="image" src="https://github.com/user-attachments/assets/022309de-98c9-451a-a096-31745a4b95ff" />
+
+Market states were identified through unsupervised machine learning applied to the Market Inefficiency Index, resulting in four distinct inefficiency regimes.
+
+The clustering results reveal clear segmentation between Efficient, Mild Inefficiency, Alpha Opportunity, and Crisis states, suggesting that abnormal return generation is strongly regime-dependent.
+
+Periods classified as Alpha Opportunity and Crisis regimes correspond to substantially elevated inefficiency levels, indicating environments where traditional factor models exhibit reduced explanatory power and where active alpha generation becomes more feasible.
+
+Conversely, Efficient regimes are characterized by compressed alpha dispersion and lower aggregate inefficiency levels, reflecting market conditions in which systematic risk factors account for a larger proportion of realized returns.
+
+The existence of persistent regime structure provides empirical support for incorporating state-dependent signals into alpha forecasting and portfolio allocation frameworks, as the profitability of alpha-based strategies appears to vary meaningfully across market environments.
+
+
+
+
+
 
 
 

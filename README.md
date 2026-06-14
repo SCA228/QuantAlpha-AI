@@ -292,7 +292,7 @@ Elevated inefficiency levels during 2023–2024 indicate periods in which tradit
 
 The observed dynamics support the hypothesis that market efficiency is regime-dependent and evolves through time.
 
- Market Regime Detection 
+##  Market Regime Detection 
 
 <img width="750" height="550" alt="image" src="https://github.com/user-attachments/assets/022309de-98c9-451a-a096-31745a4b95ff" />
 
